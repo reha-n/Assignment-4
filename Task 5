@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int batchnum, sum = 0, digit;
+
+    // Ask the user to input a batch number
+    cout << "Enter the batch number: ";
+    cin >> batchnum;
+
+    // Calculate the sum of the digits
+    int originalBatchNumber = batchnum; // Storing the original number for display purposes
+    while (batchnum > 0) {
+        digit = batchnum % 10;  
+        sum += digit;              
+        batchnum /= 10;         
+    }
+
+    // Display the sum of the digits
+    cout << "The sum of the digits of " << originalBatchNumber << " is " << sum << "." << endl;
+
+    // Check if the sum is divisible by 3
+    if (sum % 3 == 0) {
+        cout << "The sum is divisible by 3." << endl;
+    } else {
+        cout << "The sum is not divisible by 3." << endl;
+    }
+
+    return 0;
+}
