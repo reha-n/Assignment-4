@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int bid, bid1, bid2, bid3, bid4, bid5, highestBid;
+
+    // Prompt the user to input the first bid
+    cout << "Enter bid 1: ";
+    cin >> bid1;
+    cout << "Enter bid 2: ";
+    cin >> bid2;
+    cout << "Enter bid 3: ";
+    cin >> bid3;
+    cout << "Enter bid 4: ";
+    cin >> bid4;
+    cout << "Enter bid 5: ";
+    cin >> bid5;
+    highestBid = bid;  
+
+   
+
+        // Compare the current bid with the highest bid
+        if (bid > highestBid) {
+            highestBid = bid;  
+        }
+    
+
+    // Display the highest bid
+    cout << "The highest bid is: " << highestBid << endl;
+
+    return 0;
+}
