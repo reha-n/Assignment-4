@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x, ran;
+
+    // Ask the user to input the number and the table range
+    cout << "Enter the number for the multiplication table: ";
+    cin >> x;
+    cout << "Enter the range (e.g., 20) for the multiplication table: ";
+    cin >> ran;
+
+    // Loop
+    for (int i = 1; i <= ran; i++) {
+        cout << x << " * " << i << " = " << x * i << endl;
+    }
+
+    return 0;
+}
