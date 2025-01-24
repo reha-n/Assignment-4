@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, sum = 0;
+
+    // Ask the user to input the number n
+    cout << "Enter a number n: ";
+    cin >> n;
+
+    // Loop 
+    for (int i = 1; i <= n; i++) {
+        // Check if the number is odd
+        if (i % 2 != 0) {
+            sum += i;  // Add the odd number to the sum
+        }
+    }
+
+    // Display the result
+    cout << "The sum of all odd numbers between 1 and " << n << " is: " << sum << endl;
+
+    return 0;
+}
