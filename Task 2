@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, evennums = 0, oddnums = 0;
+
+    // Ask user to input the range (1 to n)
+    cout << "Enter the value of n: ";
+    cin >> n;
+
+    // Loop 
+    for (int i = 1; i <= n; i++) {
+        // Check if the number is even or odd
+        if (i % 2 == 0) {
+            cout << i << " is even." << endl;
+            evennums++;  // Increment even counter
+        } else {
+            cout << i << " is odd." << endl;
+            oddnums++;   // Increment odd counter
+        }
+    }
+
+    // Display how many odd and even numbers
+    cout << "Total even numbers: " << evennums << endl;
+    cout << "Total odd numbers: " << oddnums << endl;
+
+    return 0;
+}
