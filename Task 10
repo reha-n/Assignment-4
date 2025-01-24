@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number, totalDigits = 0, evenDigits = 0, oddDigits = 0;
+    
+    // Prompt the user to input a number
+    cout << "Enter a number: ";
+    cin >> number;
+
+    // Make sure to work with positive number for easier digit extraction
+    int temp = number; // Store original number to calculate number of digits
+
+    // Count the total digits
+    while (temp > 0) {
+        totalDigits++;
+        temp /= 10;  // Remove the last digit
+    }
+
+    temp = number; // Reset temp to original number to start the counting process
+
+    // Loop through each digit of the number
+    while (temp > 0) {
+        int digit = temp % 10;  // Extract the last digit
+
+        // Check if the digit is even or odd
+        if (digit % 2 == 0) {
+            evenDigits++;  // Increment even digit count
+        } else {
+            oddDigits++;   // Increment odd digit count
+        }
+
+        temp /= 10;  // Remove the last digit
+    }
+
+    // Display the results
+    cout << "Total digits: " << totalDigits << endl;
+    cout << "Even digits: " << evenDigits << endl;
+    cout << "Odd digits: " << oddDigits << endl;
+
+    return 0;
+}
